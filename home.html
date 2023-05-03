@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Porntolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="homecss.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.s-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="s-top">
+  <div class="s-bar s-grey s-card s-left-align s-large">
+    <a class="s-bar-item s-button s-hide-medium s-hide-large s-right s-padding-large s-hover-white s-large s-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="home.html" class="s-bar-item s-button s-padding-large s-white">Home</a>
+    <a href="gold.html" class="s-bar-item s-button s-hide-small s-padding-large s-hover-white">GOLD</a>
+    <a href="stocks.html" class="s-bar-item s-button s-hide-small s-padding-large s-hover-white">STOCKS</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="s-container s-black s-center" style="padding:128px 16px">
+  <h1 class="s-margin s-jumbo">ABC</h1>
+  <p class="s-xlarge">START INVESTING AND ORGANIZING YOUR ASSETS</p>
+  <button class="s-button s-black s-padding-large s-large s-margin-top">SIGN UP</button>
+</header>
+
+<!-- First Grid -->
+<div class="s-row-padding s-padding-64 s-container">
+  <div class="s-content">
+    <div class="s-twothird">
+      <h1>What We Are</h1>
+      <h5 class="s-padding-32">Asset management companies (AMCs) are firms pooling funds from various individual and institutional investors and investing in various securities. The company invests the funds in capital assets such as stocks, real estate, bonds, and so on. The asset management companies have professionals called fund managers who manage the investment and the research team selects the right securities.</h5>
+
+      <p class="s-text-grey">Fund managers identify the investment options that are in line with the objectives of the fund. For instance, a debt fund invests mostly in bonds and government securities to protect the investment and earn a steady return. An equity fund mainly focuses on investing in shares of companies to maximise return for the investors..</p>
+    </div>
+
+    <div class="s-third s-center">
+      <i class="fa fa-anchor s-padding-64 s-text-red"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="s-row-padding s-light-grey s-padding-64 s-container">
+  <div class="s-content">
+    <div class="s-third s-center">
+      <i class="fa fa-coffee s-padding-64 s-text-red s-margin-right"></i>
+    </div>
+
+    <div class="s-twothird">
+      <h1>What We Do</h1>
+      <h5 class="s-padding-32">You may invest in mutual funds directly with an AMC or asset management company. The company is principally responsible for driving the mutual fund and making decisions that benefit the investors. Under the leadership of a fund manager, it invests the money in line with the investment objectives of the scheme. The process is broadly listed below.</h5>
+
+      <p class="s-text-grey">An AMC typically has a team of researchers and analysts who report their market findings and trends to the fund manager. Based on these findings and investment objectives of the fund, the fund manager then chooses the securities to buy or sell. This is how a company builds a portfolio, which depends predominantly on the experience and expertise of the fund manager.</p>
+    </div>
+  </div>
+</div>
+
+<div class="s-container s-black s-center s-opacity s-padding-64">
+    <h1 class="s-margin s-xlarge">WE ARE HERE TO GUIDE YOU THROUGH YOUR INVESTMENTS AND ASSETS</h1>
+</div>
+
+<!-- Footer -->
+<footer class="s-container s-padding-64 s-center s-opacity">  
+  <div class="s-xlarge s-padding-32">
+    <i class="fa fa-facebook-official s-hover-opacity"></i>
+    <i class="fa fa-instagram s-hover-opacity"></i>
+    <i class="fa fa-snapchat s-hover-opacity"></i>
+    <i class="fa fa-pinterest-p s-hover-opacity"></i>
+    <i class="fa fa-twitter s-hover-opacity"></i>
+    <i class="fa fa-linkedin s-hover-opacity"></i>
+ </div>
+ 
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("s-show") == -1) {
+    x.className += " s-show";
+  } else { 
+    x.className = x.className.replace(" s-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

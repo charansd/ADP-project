@@ -1,0 +1,77 @@
+<html>
+    <link rel="stylesheet" href="homecss.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<head>
+		<script type="text/javascript" src="https://www.bullionvault.com/chart/bullionvaultchart.js" ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<script type="text/javascript" >
+			var options = {
+				bullion: 'gold',
+				currency: 'USD',
+				timeframe: '1w',
+				chartType: 'line',
+				miniChartModeAxis: 'oz',
+				referrerID: 'MYUSERNAME',
+				containerDefinedSize: true,
+				miniChartMode: false,
+				displayLatestPriceLine: true,
+				switchBullion: true,
+				switchCurrency: true,
+				switchTimeframe: true,
+				switchChartType: true,
+				exportButton: true
+			};
+			var chartBV = new BullionVaultChart(options, 'embed');
+		</script>
+	</head>
+    <style>
+        body{
+            background-color: black;
+            width: 100%;
+            color: blanchedalmond;
+            width: 100%;
+        }
+        .gr{
+            margin-top: 2%;
+            color: blanchedalmond;
+            font-size:1000%;
+        }
+        a{
+            font-size: xx-large;
+            color:rgb(10, 10, 9);
+        }
+    </style>
+	<body>
+        <div class="s-top">
+            <div class="s-bar s-grey s-card s-left-align s-large">
+              <a class="s-bar-item s-button s-hide-medium s-hide-large s-right s-padding-large s-hover-white s-large s-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+              <a href="home.html" class="s-bar-item s-button s-padding-large s-white">Home</a>
+              <a href="gold.html" class="s-bar-item s-button s-hide-small s-padding-large s-hover-white">GOLD</a>
+              <a href="stocks.html" class="s-bar-item s-button s-hide-small s-padding-large s-hover-white">STOCKS</a>
+            </div>
+          </div>
+	<div class="gr"><center><text style="margin-top: 10px;">GOLD</text></center><div id="embed" style="height: 400px; width: 100%;"></div></div>
+    <div data-ng-app="" data-ng-init="quantity=1;price=5">
+
+        <center><h2>Enter your Requirement</h2>
+        
+        Quantity:(in gms) <input type="number" ng-model="quantity">
+        Price: <input type="number" ng-model="price">
+        
+        <p><b>Total in INR:</b> {{quantity * price}}</p>
+        <button type="button" onclick="alert('YOU WILL BE REDIRECTED TO THE PAYMENT PAGE')"><a href="s6-PaymentSubNew.html">PAY NOW</a></button></center>
+        <footer class="s-container s-padding-64 s-center s-opacity s-white">  
+            <div class="s-xlarge s-padding-32">
+              <i class="fa fa-facebook-official s-hover-opacity"></i>
+              <i class="fa fa-instagram s-hover-opacity"></i>
+              <i class="fa fa-snapchat s-hover-opacity"></i>
+              <i class="fa fa-pinterest-p s-hover-opacity"></i>
+              <i class="fa fa-twitter s-hover-opacity"></i>
+              <i class="fa fa-linkedin s-hover-opacity"></i>
+           </div>
+           
+          </footer>
+	</body>
+	</html>

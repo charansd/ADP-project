@@ -1,0 +1,128 @@
+<html>
+   <head>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+   </head>
+   <style>
+ 
+img {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 10%;
+ height: 20%;
+}
+       .login-heading{
+           text-align: center;
+           margin-top: 0.5%;
+           color: #ff3333;
+           font-family: 'Poppins', sans-serif;
+           font-size: 300%;
+       }
+
+       .dob-heading{
+           font-family:'Poppins', sans-serif;
+           font-size: 150%;
+           font-weight: 200;
+           color: black
+       }
+
+       .gender-heading{
+           font-family:'Poppins', sans-serif;
+           font-size: 150%;
+           font-weight: 200;
+           color: black
+       }
+
+       .add-heading{
+           font-family:'Poppins', sans-serif;
+           font-size: 150%;
+           font-weight: 200;
+           color: black;
+       }
+ 
+ 
+        input{
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 30%;
+    height: 3.3 em;
+    margin-bottom: 14px;
+    padding-top: 18px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 18px;
+    color:black;
+    text-align: left;
+    border: 1px solid #d6d6d6;
+    border-radius: 10px;
+    background: hsla(0,0%,100%,.8);
+    background-clip: padding-box;
+    }
+
+    .gender{
+        color: blue;
+        display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0px;
+    }
+
+    .button{
+        background-color: black;
+        border: none;
+        color: white;
+        width: 25%;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+       
+    
+ 
+   </style>
+   <body>
+           <img src="logo.png" >
+           <h1 class="login-heading">Sign up to become a member</h1>
+           <center><div class="Fname"><input id="Fname" name="FirstName" type="text" placeholder="First name" /></div></center>
+           <center><div class="Lname"><input id="Lname" name="LastName" type="text" placeholder="Last name" /></div></center>
+           <center><div class="Pno"><input id="Pno" name="Phone number" type="number" placeholder="Phone number"/></div></center>
+           <br>
+           <center><h3 class="dob-heading">Enter your date of birth</h3></center>
+           <center><div class="dob"><input id="dob" name="DOB" type="date" placeholder="Date of birth"/></div></center>
+           <br>
+           <center><h3 class="gender-heading">Select your gender</h3></center>
+            <center>
+            <div class="gender">
+            <input type="radio" id="m" name="Male" value="Male" style="margin-left: 0%;">
+            <label for="age1">Male</label>
+            <input type="radio" id="f" name="Female" value="Female">
+            <label for="age2">Female</label>  
+            <input type="radio" id="o" name="Other" value="Other">
+            <label for="age3">Other</label><br>
+            </div>
+            </center>
+
+            <br>
+           <center><h3 class="add-heading">Address</h3></center>
+           <center><div class="add"><input id="add" name="DOB" type="text" placeholder="City"/></div></center>
+           <center><div class="add"><input id="add" name="DOB" type="text" placeholder="State"/></div></center>
+           <center><div class="add"><input id="add" name="DOB" type="text" placeholder="Country"/></div></center>
+
+           <br>
+           
+           <center><button class="button">Continue</button></center>
+
+   </body>
+  
+</html>

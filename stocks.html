@@ -1,0 +1,342 @@
+<html>
+    <title>Stocks</title>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <style>
+
+            body{
+                margin: 0%;
+                padding: 0%;
+            }
+
+            .headingtext{
+                background-color: black;
+                color: white;
+                font-family: 'Poppins', sans-serif;
+                padding-top: 5%;
+                padding-bottom: 5%;
+                padding-left: 2%;
+                font-weight: 1000;
+                font-size: 300%;
+                margin-bottom: 5%;
+             
+            }
+
+            .exchange{
+      position: relative;
+      text-align: center;
+      height: 100px;
+      max-width: 70%;
+      margin-left: 15%;
+      margin-top: 10%;
+      margin-bottom: 10%;
+      padding: 0%;
+      display: grid;
+      margin-top: 0%;
+      grid-template-rows: repeat(1,1fr);
+      grid-template-columns: repeat(2,1fr);
+      }
+
+      .nse{
+        display: grid;
+    align-items: center;
+    justify-content: center;
+        background: #fe317e;;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform .2s;
+      margin: 0 auto;}
+
+      .bse{
+        display: grid;
+    align-items: center;
+    justify-content: center;
+      background: #00b9bf;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform .2s;
+      margin: 0 auto;}
+
+  .exchange span{
+      position: absolute;
+      text-align: center;
+      margin: 0 auto;
+      left: 0;
+      text-decoration: none;
+      right: 0;
+      top:27%;
+      font-family: 'Poppins', sans-serif;
+      color:white;
+      font-size: 200%;
+      font-weight: 700;
+      filter: brightness(200%);
+  }
+
+  .exctext{
+        display: grid;
+        margin-top: 0%;
+        margin-left: 4%;
+        height: 30%;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(2,1fr);
+        border-color: black;
+        max-width: 100%;
+        margin-bottom: 12%;
+  }
+
+  .exc-button-text{
+      grid-row: 1/span 2;
+      grid-column: 2/span 1;
+      padding-top: 10%;
+  }
+
+  .exc-top-text{
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    padding-top:10% ;
+    color: white;
+    font-size: 200%;
+  }
+
+  .exc-bottom-text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 200%;
+  }
+
+  .stocks{
+        display: grid;
+        margin-top:3%;
+        margin-left: 5%;
+        height: 40%;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(3,1fr);
+        border-color: black;
+        width: 90%;
+        
+  }
+
+  .stk{
+      background-color: black;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+  }
+  .stk h1{
+      text-align: center;
+      padding-top: 10%;
+      padding-bottom: 10%;
+  }
+
+  .stk a{
+      text-decoration:none;
+      color:white;
+  }
+
+  .restext1{
+      font-family: 'Poppins', sans-serif;
+      color: #ffcc00;
+      text-align: center;
+      font-size: 300%;
+      font-weight: 900;
+  }
+
+  .restext2{
+    font-family: 'Poppins', sans-serif;
+      color: #ff3333;
+      text-align: center;
+      font-size: 300%;
+      font-weight: 900;
+  }
+
+  .addstks{
+    padding-left: 2%;
+  }
+
+  .addstks h3{
+    font-family: 'Anton', sans-serif;
+    font-size: 350%;
+    text-transform: capitalize;
+    font-weight: 300;
+  }
+
+  .dropbtn {
+  background-color: #ff3300;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #ff3300;
+}
+
+input{
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 30%;
+    height: 3.3 em;
+    margin-bottom: 14px;
+    padding-top: 18px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 18px;
+    color:black;
+    text-align: left;
+    border: 1px solid #d6d6d6;
+    border-radius: 10px;
+    background: hsla(0,0%,100%,.8);
+    background-clip: padding-box;
+    }
+    
+    .button{
+        background-color: black;
+        border: none;
+        color: white;
+        width: 10%;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    .advice h3{
+    font-family: 'Anton', sans-serif;
+    font-size: 300%;
+    text-transform: capitalize;
+    font-weight: 200;
+    }
+
+    .advice h5{
+        font-family: 'Anton', sans-serif;
+    font-size: 170%;
+    text-transform: capitalize;
+    font-weight: 100;
+    }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="headingtext">
+            Invest in the stock market today.
+        </div>
+
+        <div class="advice">
+            <center><h3>Didn't do your homework? We did.</h3></center>
+            <center><h5>Click here for trading advice from our experts</h5></center>
+            <center><button class="button">GO -> </button></center>
+        </div>
+        <br><br><br><br><br><br><br>
+        
+        <div class="exctext">
+            <div class="exc-top-text">The stock market changes all the time,</div>
+            <div class="exc-bottom-text">keep yourself updated.</div>
+
+            <div class="exc-button-text">
+                <div class="exchange" id="exc">
+                <a href="https://www.nseindia.com/" style="text-decoration: none;"><div class="nse"><span>NSE</span></div></a>
+                <a href="https://www.bseindia.com/" style="text-decoration: none;"><div class="bse"><span>BSE</span></div></a>
+                </div>
+            </div>
+
+            
+            
+        </div>
+
+        <div class="restext1">
+            Not sure which one to pick?
+        </div>
+        <div class="restext2">
+            Maybe we can help.
+        </div>
+        <div class="stocks">
+            <div class="stk aapl"><h1><a href="https://finance.yahoo.com/quote/AAPL/">Apple</a></h1></div>
+            <div class="stk msft"><h1><a href="https://finance.yahoo.com/quote/MSFT/">Microsoft</a></h1></div>
+            <div class="stk googl"><h1><a href="https://finance.yahoo.com/quote/GOOGL/">Google</a></h1></div>
+            <div class="stk tsla"><h1><a href="https://finance.yahoo.com/quote/TSLA/">Tesla</a></h1></div>
+            <div class="stk amzn"><h1><a href="https://finance.yahoo.com/quote/AMZN/">Amazon</a></h1></div>
+            <div class="stk nke"><h1><a href="https://finance.yahoo.com/quote/NKE/">Nike</a></h1></div>
+        </div>
+        
+      
+        
+        <br><br><br><br><br><br>
+
+        <div class="addstks">
+            <h3>Add stocks to your investment portfolio</h3>
+
+            <div class="dropdown">
+                <button class="dropbtn">Company</button>
+                <div class="dropdown-content">
+                <a href="#">Apple</a>
+                <a href="#">Microsoft</a>
+                <a href="#">Google</a>
+                <a href="#">Tesla</a>
+                <a href="#">Amazon</a>
+                <a href="#">Nike</a>
+                </div>
+              </div>
+              <br><br><br>
+
+            <div class="sno"><input id="sno" name="Number of stocks" type="number" placeholder="Number of stocks"/></div>
+        </div>
+
+        
+
+        
+
+       
+        
+    </body>
+</html>
+
+
+<!-- 
+    Didn't do your homework? Don't worry, we got you
+    Need help choosing? The doctor is in 
+    The stock market changes all the time, keep yourself updated  
+    cant decide? let us help
+-->
